@@ -34,7 +34,6 @@ g_name varchar(255) ,
 g_desc varchar(255) ,
 s_ID int foreign key references songs (s_ID) 
 );
-
 insert into userss 
 values ( 1 ,'useraa' , 'useraa@hotmail.com' , '1111' );
 insert into playlists (p_ID , p_playlistID , p_songId , p_username)
@@ -45,7 +44,6 @@ insert into artists (a_ID , a_artistID , a_name )
 values ( 4 , 4444 , 'john legend');
 insert into genres (g_ID , g_genreID , g_name )
 values (5 , 5555 , 'romantic' ); 
-
 insert into userss (u_ID , u_username , u_email , u_password)
 values ( 6 , 'userbb' , 'userbb@hotmail.com' , '2222' );
 insert into playlists (p_ID , p_playlistID , p_songId , p_username)
@@ -137,7 +135,6 @@ SELECT AVG(s_songID)
 FROM songs ;
 SELECT SUM(s_artistID)
 FROM songs ;
-
 SELECT a_name
 FROM artists
 WHERE a_name LIKE 'a%';
